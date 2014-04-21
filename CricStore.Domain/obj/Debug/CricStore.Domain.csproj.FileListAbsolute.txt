@@ -1,0 +1,7 @@
+C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\bin\Debug\CricStore.Domain.dll
+C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\bin\Debug\CricStore.Domain.pdb
+C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\bin\Debug\Ninject.dll
+C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\bin\Debug\Ninject.xml
+C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\obj\Debug\CricStore.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\obj\Debug\CricStore.Domain.dll
+C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\obj\Debug\CricStore.Domain.pdb
