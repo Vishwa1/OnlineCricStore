@@ -5,3 +5,8 @@ C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricSto
 C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\obj\Debug\CricStore.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\obj\Debug\CricStore.Domain.dll
 C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\obj\Debug\CricStore.Domain.pdb
+C:\Users\Vishwajeet\Documents\Visual Studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\bin\Debug\CricStore.Domain.dll.config
+C:\Users\Vishwajeet\Documents\Visual Studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Vishwajeet\Documents\Visual Studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Vishwajeet\Documents\Visual Studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Vishwajeet\Documents\Visual Studio 2013\Projects\Practice\OnlineCricStore\CricStore.Domain\bin\Debug\EntityFramework.SqlServer.xml

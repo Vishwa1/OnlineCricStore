@@ -30,10 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Ninject">
       <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,12 +49,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\Interface1.cs" />
+    <Compile Include="Abstract\IBrandRepository.cs" />
+    <Compile Include="Abstract\ICategoryRepository.cs" />
+    <Compile Include="Abstract\IProductRepository.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Concrete\CricDbContext.cs" />
+    <Compile Include="Concrete\EFBrandRepository.cs" />
+    <Compile Include="Concrete\EFCategoryRepository.cs" />
+    <Compile Include="Concrete\EFProductRepository.cs" />
+    <Compile Include="Entities\Brand.cs" />
+    <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

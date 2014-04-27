@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Ninject;
+using CricStore.Domain.Abstract;
+using CricStore.Domain.Concrete;
+
 
 namespace OnlineCricStore.WebUI.Infrastructure
 {
@@ -26,7 +29,9 @@ namespace OnlineCricStore.WebUI.Infrastructure
 
         private void AddBindings()
         {
-
+            ninjectKernel.Bind<IProductRepository>().To<EFProductRepository>();
+            ninjectKernel.Bind<IBrandRepository>().To<EFBrandRepository>();
+            ninjectKernel.Bind<ICategoryRepository>().To<EFCategoryRepository>();
         }
     }
 }

@@ -88,3 +88,5 @@ C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricSto
 C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricStore\OnlineCricStore.WebUI\obj\Debug\OnlineCricStore.WebUI.csprojResolveAssemblyReference.cache
 C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricStore\OnlineCricStore.WebUI\obj\Debug\OnlineCricStore.WebUI.dll
 C:\Users\Vishwajeet\documents\visual studio 2013\Projects\Practice\OnlineCricStore\OnlineCricStore.WebUI\obj\Debug\OnlineCricStore.WebUI.pdb
+C:\Users\Vishwajeet\Documents\Visual Studio 2013\Projects\Practice\OnlineCricStore\OnlineCricStore.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Vishwajeet\Documents\Visual Studio 2013\Projects\Practice\OnlineCricStore\OnlineCricStore.WebUI\bin\EntityFramework.SqlServer.xml

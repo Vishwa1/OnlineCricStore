@@ -38,7 +38,7 @@ namespace OnlineCricStore.WebUI.Filters
                         }
                     }
 
-                    WebSecurity.InitializeDatabaseConnection("DefaultConnection", "UserProfile", "UserId", "UserName", autoCreateTables: true);
+                    WebSecurity.InitializeDatabaseConnection("CricDbContext", "UserProfile", "UserId", "UserName", autoCreateTables: true);
                 }
                 catch (Exception ex)
                 {

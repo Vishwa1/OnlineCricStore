@@ -1,0 +1,44 @@
+﻿@model CricStore.Domain.Entities.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Product</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProductName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProductName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.price)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.price)
+    </div>
+    
+    @using (Html.BeginForm("AddToBasket", "Basket"))
+    { 
+        @Html.HiddenFor(x => x.ProductId)
+        @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+        <input type="submit" value="Add to Basket" />
+    }
+     
+</fieldset>
+<p>
+    
+    @Html.ActionLink("Back to List", "List")
+</p>
