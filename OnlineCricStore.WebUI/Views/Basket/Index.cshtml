@@ -1,0 +1,51 @@
+﻿@model OnlineCricStore.WebUI.Models.BasketIndexView
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Your Shopping Basket</h2>
+
+<table width="90%" align="center">
+    <thead>
+        <tr>
+            <th align="center"> Quantity </th>
+            <th align="center">Item</th>
+            <th align="center">Price</th>
+            <th align="center">Sub-Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var line in Model.Basket.Lines)
+        { 
+            <tr>
+                <td align="left">@line.Quantity</td>
+                <td align="left">@line.Product.ProductName</td>
+                <td align="left">@line.Product.price.ToString("c")</td>
+                <td align="left">@((line.Quantity * line.Product.price).ToString("c"))</td>
+
+                <td>
+                    @using (@Html.BeginForm("RemoveFromBasket", "Basket"))
+                    {
+                        @Html.Hidden("ProductId",line.Product.ProductId) 
+                        @Html.HiddenFor(x => x.ReturnUrl)
+                        <input class="actionButtons" type="submit" value="Remove from Basket"/>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" align="right">Total:</td>
+            <td align="right">@Model.Basket.ComputeTotalValue().ToString("c")</td>
+        </tr>
+    </tfoot>
+</table>
+
+<p align="center" class="actionButtons">
+    <a href="@Model.ReturnUrl">Continue Shopping</a>
+    @Html.ActionLink("Checkout Now", "Checkout");
+</p>
+
+

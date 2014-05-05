@@ -17,7 +17,11 @@ namespace CricStore.Domain.Concrete
             get { return context.Products; }
         }
 
-
+        //public Product List(int BrandId, int CategoryId)
+        //{
+        //    Product p = context.Products.Find(BrandId, CategoryId);
+        //    return p;
+        //}
         public Product Details(int productId)
         {
             Product p = context.Products.Find(productId);

@@ -11,12 +11,21 @@
     <div class="item">
         <h3>@p.ProductName</h3>
         @p.Description
-        @if (@p.ThumbnailPath != null)
-        {
-            <img src="@Url.Content(String.Format(@p.ThumbnailPath))" />
-        }
-        <h4>@p.price.ToString("c")</h4>
-        <input type="button" title="Details" value="Details" onclick="location.href='@Url.Action("Details", "Product", new { Id = p.ProductId }, null)'" />
 
+
+         @if (@p.ThumbnailPath != null)
+            {
+
+            <div class="image">
+                <img src="@Url.Content(String.Format(@p.ThumbnailPath))" alt="Adidas Pellara Adistar Cricket Bat"/>
+            </div>
+            }
+                @*@if (@p.ThumbnailPath != null)
+                {
+                    <img src="@Url.Content(String.Format(@p.ThumbnailPath))" />
+                }*@
+            <h4>@p.price.ToString("c")</h4>
+            <input type="button" title="Details" value="Details" onclick="location.href='@Url.Action("Details", "Product", new { Id = p.ProductId }, null)'" />
+        
     </div>
 }

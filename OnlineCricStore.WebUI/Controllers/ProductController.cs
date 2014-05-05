@@ -5,8 +5,6 @@ using System.Web;
 using System.Web.Mvc;
 using CricStore.Domain.Abstract;
 using CricStore.Domain.Entities;
-using System.IO;
-using System.Net;
 
 namespace OnlineCricStore.WebUI.Controllers
 {
@@ -26,6 +24,13 @@ namespace OnlineCricStore.WebUI.Controllers
         {
             return View(objContext.Products);
         }
+
+        //public ViewResult List(int BId, int CId)
+        //{
+        //    //return View(objContext.Products);
+        //    Product product = objContext.List(BId, CId);
+        //    return View(product);
+        //}
 
         //Displays detail view of Products
         public ActionResult Details(int Id)

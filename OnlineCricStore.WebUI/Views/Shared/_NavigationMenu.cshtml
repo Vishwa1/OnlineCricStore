@@ -1,4 +1,6 @@
-﻿<div class="container">
+﻿
+
+<div class="container">
     <ul id="nav">
         <li><a href="#">Home</a></li>
         <li>
@@ -8,7 +10,9 @@
                 <li>
 
                     <ul>
-                        <li>@Html.ActionLink("Adidas", "List", "Product")</li>
+                        <li>@Html.ActionLink("Adidas", "List", "Product") </li>
+                         @*<li>@Html.ActionLink("Adidas", "List", "Product", new { BId = ViewBag.BrandId, CId = ViewBag.CategoryId }, null)</li>*@
+                        @*<li>onclick="location.href='@Url.Action("List", "Product", new { BId = p.BrandId, CId= p.CategoryId }, null)'"</li>*@
                         <li>@Html.ActionLink("MRF", "Index", "Home")</li>
                         <li>@Html.ActionLink("Nike", "Nike", "Home")</li>
                     </ul>

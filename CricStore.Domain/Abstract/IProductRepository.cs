@@ -11,6 +11,7 @@ namespace CricStore.Domain.Abstract
     {
         IQueryable<Product> Products { get; }
 
+        //Product List(int BrandId, int CategoryId);
         Product Details(int productId);
     }
 }

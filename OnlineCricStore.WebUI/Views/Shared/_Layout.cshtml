@@ -23,6 +23,9 @@
     @Html.Partial("_NavigationMenu")
         
     <div id="body">
+        @*To display Shopping Summary on page*@ 
+        @{Html.RenderAction("ShoppingSummary", "Basket");} 
+
         @RenderSection("featured", required: false)
         <section class="content-wrapper main-content clear-fix">
             @RenderBody()

@@ -8,7 +8,8 @@
     <h2>Create a new account.</h2>
 </hgroup>
 
-@using (Html.BeginForm()) {
+@using (Html.BeginForm())
+{
     @Html.AntiForgeryToken()
     @Html.ValidationSummary()
 
@@ -16,39 +17,39 @@
         <legend>Registration Form</legend>
         <ol>
             <li>
-                @Html.LabelFor(m => m.UserName)
-                @Html.TextBoxFor(m => m.UserName)
+                @Html.LabelFor(m => m.UserName)<br />
+                @Html.TextBoxFor(m => m.UserName, new { @placeholder = "Enter Desired UserName" })
             </li>
             <li>
-                @Html.LabelFor(m => m.UserFirstName)
-                @Html.TextBoxFor(m => m.UserFirstName)
+                @Html.LabelFor(m => m.UserFirstName)<br />
+                @Html.TextBoxFor(m => m.UserFirstName, new { @placeholder = "Enter First Name" })
             </li>
             <li>
-                @Html.LabelFor(m => m.UserLastName)
-                @Html.TextBoxFor(m => m.UserLastName)
+                @Html.LabelFor(m => m.UserLastName)<br />
+                @Html.TextBoxFor(m => m.UserLastName, new { @placeholder = "Enter Last Name" })
             </li>
             <li>
-                @Html.LabelFor(m => m.UserEmail)
-                @Html.TextBoxFor(m => m.UserEmail)
+                @Html.LabelFor(m => m.UserEmail)<br />
+                @Html.TextBoxFor(m => m.UserEmail, new { @placeholder = "Enter Email" })
             </li>
             <li>
-                @Html.LabelFor(m => m.Password)
-                @Html.PasswordFor(m => m.Password)
+                @Html.LabelFor(m => m.Password)<br />
+                @Html.PasswordFor(m => m.Password, new { @placeholder = "Enter Password" })
             </li>
             <li>
-                @Html.LabelFor(m => m.ConfirmPassword)
-                @Html.PasswordFor(m => m.ConfirmPassword)
+                @Html.LabelFor(m => m.ConfirmPassword)<br />
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @placeholder = "Confirm Password" })
             </li>
             <li>
-                @Html.LabelFor(m => m.UserMobile)
-                @Html.TextBoxFor(m => m.UserMobile)
+                @Html.LabelFor(m => m.UserMobile)<br />
+                @Html.TextBoxFor(m => m.UserMobile, new { @placeholder = "Enter Mobile" })
             </li>
             <li>
-                @Html.LabelFor(m => m.UserCity)
-                @Html.TextBoxFor(m => m.UserCity)
+                @Html.LabelFor(m => m.UserCity) <br />
+                @Html.TextBoxFor(m => m.UserCity, new { @placeholder = "Enter City" })
             </li>
         </ol>
-        <input type="submit" value="Register" />
+        <input type="submit" class="btn btn-primary" value="Register" />
     </fieldset>
 }
 
