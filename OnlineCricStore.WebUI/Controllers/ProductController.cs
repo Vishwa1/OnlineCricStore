@@ -25,12 +25,12 @@ namespace OnlineCricStore.WebUI.Controllers
             return View(objContext.Products);
         }
 
-        //public ViewResult List(int BId, int CId)
-        //{
-        //    //return View(objContext.Products);
-        //    Product product = objContext.List(BId, CId);
-        //    return View(product);
-        //}
+        // Display Brandwise List of Products
+        public ViewResult BrandList(int BrandId)
+        {
+            IQueryable<Product> products = objContext.BrandList(BrandId);
+            return View(products);
+        }
 
         //Displays detail view of Products
         public ActionResult Details(int Id)

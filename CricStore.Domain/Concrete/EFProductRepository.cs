@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CricStore.Domain.Abstract;
 using CricStore.Domain.Entities;
+using System.Data.Entity;
 
 namespace CricStore.Domain.Concrete
 {
@@ -17,11 +18,12 @@ namespace CricStore.Domain.Concrete
             get { return context.Products; }
         }
 
-        //public Product List(int BrandId, int CategoryId)
-        //{
-        //    Product p = context.Products.Find(BrandId, CategoryId);
-        //    return p;
-        //}
+        public IQueryable<Product> BrandList(int brandId)
+        {
+            IQueryable<Product> p = context.Products.Where(x => x.BrandId == null || x.BrandId == brandId);
+            
+            return p;
+        }
         public Product Details(int productId)
         {
             Product p = context.Products.Find(productId);

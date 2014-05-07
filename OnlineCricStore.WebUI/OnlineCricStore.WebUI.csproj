@@ -328,26 +328,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\Adidas.cshtml" />
-    <Content Include="Views\Home\MRF.cshtml" />
-    <Content Include="Views\Home\Nike.cshtml" />
-    <Content Include="Views\Home\KookaBurra.cshtml" />
-    <Content Include="Views\Home\GMBalls.cshtml" />
-    <Content Include="Views\Home\SGBalls.cshtml" />
-    <Content Include="Views\Home\BatGrips.cshtml" />
-    <Content Include="Views\Home\BatCover.cshtml" />
-    <Content Include="Views\Home\Pads.cshtml" />
-    <Content Include="Views\Home\Helmets.cshtml" />
-    <Content Include="Views\Home\Stumps.cshtml" />
-    <Content Include="Views\Home\Gloves.cshtml" />
-    <Content Include="Views\Home\Shoes.cshtml" />
-    <Content Include="Views\Home\Bails.cshtml" />
-    <Content Include="Views\Home\AdidasBrand.cshtml" />
-    <Content Include="Views\Home\NikeBrand.cshtml" />
-    <Content Include="Views\Home\MRFBrand.cshtml" />
-    <Content Include="Views\Home\CABrand.cshtml" />
-    <Content Include="Views\Home\GMBrand.cshtml" />
-    <Content Include="Views\Home\SGBrand.cshtml" />
     <Content Include="Views\Home\Career.cshtml" />
     <Content Include="Views\Shared\_HeaderAndTitle.cshtml" />
     <Content Include="Views\Shared\_NavigationMenu.cshtml" />
@@ -359,7 +339,7 @@
     <Content Include="Views\Basket\Checkout.cshtml" />
     <Content Include="Views\Basket\CompletedOrder.cshtml" />
     <Content Include="Views\Account\Temp_Delete_Later.cshtml" />
-    <Content Include="Views\Product\List2.cshtml" />
+    <Content Include="Views\Product\BrandList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

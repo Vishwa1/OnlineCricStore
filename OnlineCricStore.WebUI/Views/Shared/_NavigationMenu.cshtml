@@ -10,9 +10,14 @@
                 <li>
 
                     <ul>
-                        <li>@Html.ActionLink("Adidas", "List", "Product") </li>
-                         @*<li>@Html.ActionLink("Adidas", "List", "Product", new { BId = ViewBag.BrandId, CId = ViewBag.CategoryId }, null)</li>*@
-                        @*<li>onclick="location.href='@Url.Action("List", "Product", new { BId = p.BrandId, CId= p.CategoryId }, null)'"</li>*@
+                        @*<li>
+                            <a href="/Product/BrandList?BrandId=1">Ad</a>
+                        </li>*@
+                         <li>
+                            <a href="/Product/BrandList/1">
+                                @Html.ActionLink("Adidas", "BrandList", "Product", new { BrandId = 1 }, null)
+                            </a>
+                        </li>
                         <li>@Html.ActionLink("MRF", "Index", "Home")</li>
                         <li>@Html.ActionLink("Nike", "Nike", "Home")</li>
                     </ul>
