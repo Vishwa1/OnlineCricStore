@@ -191,6 +191,7 @@
     <Compile Include="Controllers\BasketController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -340,6 +341,9 @@
     <Content Include="Views\Basket\CompletedOrder.cshtml" />
     <Content Include="Views\Account\Temp_Delete_Later.cshtml" />
     <Content Include="Views\Product\BrandList.cshtml" />
+    <Content Include="Views\Shared\_SearchItems.cshtml" />
+    <Content Include="Views\Search\SearchByBrand.cshtml" />
+    <Content Include="Views\Search\SearchByCategory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

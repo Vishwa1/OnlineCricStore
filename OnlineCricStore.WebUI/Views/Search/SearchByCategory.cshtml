@@ -1,0 +1,31 @@
+﻿@model IEnumerable<CricStore.Domain.Entities.Product>
+
+@{
+    ViewBag.Title = "SearchByCategory";
+}
+
+<h2 style="font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif; color:darkblue">Displaying items by category</h2>
+
+<table>
+    @foreach (var p in Model)
+    {
+        <div class="ProductItem">
+
+            @if (@p.ThumbnailPath != null)
+            {
+                <div class="image">
+                    <img src="@Url.Content(String.Format(@p.ThumbnailPath))" alt="Adidas Pellara Adistar Cricket Bat" />
+                </div>
+            }
+            <div class="ProductName">
+                <h3 style="font-family:book antiqua; font-size:large; color:darkmagenta; font-weight:600">
+                    @p.ProductName
+                </h3>
+                <h4 style="font-family:book antiqua; font-size:large; color:teal; font-weight:600">@p.price.ToString("c")</h4>
+            </div>
+
+            <input class="btn btn-primary" type="button" title="Details" value="Details" onclick="location.href='@Url.Action("Details", "Product", new { Id = p.ProductId }, null)'" />
+
+        </div>
+    }
+</table>

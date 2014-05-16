@@ -9,7 +9,7 @@
 <table>
      @foreach (var p in Model)
     {
-        <div class="item">
+        <div class="ProductItem">
 
             @if (@p.ThumbnailPath != null)
             {
@@ -18,11 +18,13 @@
                 </div>
             }
             <div class="ProductName">
-                <h3>@p.ProductName</h3>
-                <h4>@p.price.ToString("c")</h4>
+                <h3 style="font-family:book antiqua; font-size:large; color:darkmagenta; font-weight:600">
+                    @p.ProductName
+                </h3>
+                <h4 style="font-family:book antiqua; font-size:large; color:teal; font-weight:600">@p.price.ToString("c")</h4>
             </div>
 
-            <input class="myButton" type="button" title="Details" value="Details" onclick="location.href='@Url.Action("Details", "Product", new { Id = p.ProductId }, null)'" />
+            <input class="btn btn-primary" type="button" title="Details" value="Details" onclick="location.href='@Url.Action("Details", "Product", new { Id = p.ProductId }, null)'" />
 
         </div>
     }

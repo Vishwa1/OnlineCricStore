@@ -340,6 +340,11 @@ a:focus {
 
 img {
   vertical-align: middle;
+  /* Added by VJ*/
+  border: cadetblue;
+  border-width: 5px;
+  border-style: groove;
+  /*End VJ*/
 }
 
 .img-responsive {

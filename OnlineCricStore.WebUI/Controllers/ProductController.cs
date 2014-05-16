@@ -13,7 +13,7 @@ namespace OnlineCricStore.WebUI.Controllers
         // GET: /Products/
 
         private IProductRepository objContext;
-
+        
         public ProductController(IProductRepository productRepository)
         {
             this.objContext = productRepository;

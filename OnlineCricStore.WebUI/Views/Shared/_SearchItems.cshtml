@@ -1,0 +1,26 @@
+﻿@*@model IEnumerable<CricStore.Domain.Entities.Product>*@
+
+
+@using (Html.BeginForm("SearchByCategory", "Search", FormMethod.Get))
+{
+    <div id="SearchButtons">
+        <div id="cat1">
+            <h2 style="font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif; color:purple">Category Name</h2>  @Html.TextBox("SearchString", "Enter Category")
+            <input style="margin-left:10px; width:90px;" class="btn btn-primary" type="submit" value="Search" />
+        </div>
+        <div id="button2">
+            
+        </div>
+                
+    </div>
+}
+
+@*@using (Html.BeginForm("SearchByBrand", "Search", FormMethod.Get))
+{
+    <p>
+        Brand Name:@Html.TextBox("SearchString") <br />
+        <input type="submit" value="Filter" />
+    </p>
+}*@
+
+

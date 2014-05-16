@@ -15,5 +15,7 @@ namespace CricStore.Domain.Abstract
 
         Product Details(int productId);
 
+        //IQueryable<Product> SearchProducts(int BrandId, string searchString);
+
     }
 }

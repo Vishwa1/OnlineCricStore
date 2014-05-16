@@ -30,5 +30,10 @@ namespace CricStore.Domain.Concrete
             return p;
         }
 
+        //public IQueryable<Product> SearchProducts(int BrandId, string searchString)
+        //{ 
+            
+        //}
+
     }
 }
